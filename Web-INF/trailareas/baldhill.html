@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Team Dirt IMBA Mountain Bike Chapter" >
+    <meta name="keywords" content="team dirt, teamdirt">
+    
+    <base href="../" target="_parent">
+    <title>Team Dirt</title>
+    <link rel="icon" href="favicon.png">
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+    <script type="text/javascript" src="/scripts/global.js"></script>
+    <script type="text/javascript" src="/scripts/trailareas.js"></script>
+    
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/styles/teamdirt.css">
+	<link rel="stylesheet" type="text/css" href="/styles/trailareas.css">
+
+</head>
+<body ng-app="tdApp">
+    <header id="commonHeader" ng-include="'includes/navBar.htm'"></header>
+    
+    <main id="mainContainer" ng-controller="ScreenResolution as resolutionCtrl" ng-init="resolutionCtrl.calculateIFrameWidth()" class="w3-panel">
+		
+		<header id="mainHeader">
+			<h1>Bald Hill & Fitton Green Area</h1>
+		</header>
+
+		<section class="w3-panel">
+			<div class="TrailforksRegionInfo iFrameElement" data-w="1000" data-h="150" data-rid="18813" data-counts="1" data-stats="1"></div>
+            <div class="TrailforksWidgetMap iFrameElement" data-w="1000px" data-h="400px" data-rid="18813" data-maptype="trailforks" data-trailstyle="difficulty" data-controls="1" data-list="0" data-dml="1" data-layers="labels" data-z="" data-lat="" data-lon="" data-hideunsanctioned="1"></div>
+            <a href="https://www.trailforks.com/region/bald-hill-natural-area-18813/"><img src="/imgs/partners/trailforks_logo_pb.png" class="tfLogo"/></a>
+		</section>
+
+		<section id="warning" ng-show="false" class="w3-panel w3-border w3-border-red w3-card-2">
+			<h5 class="subsection"><i class="fa fa-exclamation-triangle w3-xxxlarge" aria-hidden="true" style="color:red;vertical-align:middle;"></i> Trail Area Warning</h5>
+			<div class="w3-row w3-padding-8">
+				<div class="w3-col s2">
+					<img src="/imgs/raw_imgs/signs/alseafallsWarning1.jpg" alt="warningIMG" class="warning" onclick="modalImgView(this)">
+				</div>
+				<div class="w3-col s10">
+					<p></p>
+				</div>
+			</div>
+		</section>
+
+		<section class="w3-panel">
+			<h4 class="subsection">Description</h4>
+			<p>Bald Hill Natural Area contains a trail system owned and operated by the City of Corvallis.  Tread varies from paved bike paths to gravel doubletrack to some dirt, and contain no features.  Gravel and dirt trails are closed to bikes during the rainy season.  Please follow posted trail restrictions and closures.  The park is a great location for beginner riders and those looking for a quick workout near town.</p>
+            <p>This riding network comprises the 284-acre city-managed Bald Hill Natural Area, the 584-acre conservation area Bald Hill Farm and the county-managed Fitton Green Natural Area, all of which are linked by trails.  Trails are open to hikers, bikers, and horses.  Main parking area is on Oak Creek Rd but there are several other entrances to the broader trail system.</p>
+		</section>
+
+		<section class="w3-panel">
+			<h4 class="subsection">Trails</h4>
+            <p>Please help out fellow riders, by submitting a trail report when you discover a trail hazard.  Also, general trail reports help too, since it keeps our records up to date.  You can submit a trail report by clicking on the trail in the table below, logging into trailforks (accounts are <i>free</i>), and creating a trail report.</p>
+            <div class="TrailforksTrailStatus iFrameElement" data-w="1000" data-h="450" data-rid="18813" data-displaytype="table" data-unsanctioned="0" data-photos="0"></div>
+		</section>
+
+		<section class="w3-panel">
+			<h4 class="subsection">Land Management Partners</h4>
+			<!--a ng-repeat="partner in ridearea.partners" href="{{partner.url}}" target="_blank"><img src="{{partner.src}}" alt="partner" class="partner"></a-->
+			<a href="http://www.corvallisoregon.gov/index.aspx?page=56" target="_blank"><img src="imgs/partners/corvallispr.jpg" alt="partner" class="partner"></a>
+		</section>
+
+		<footer></footer>
+		
+    </main>
+    
+    <footer id="commonFooter" ng-include="'includes/footer.htm'"></footer>
+		
+</body>
+</html>

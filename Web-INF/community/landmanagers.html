@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Team Dirt IMBA Mountain Bike Chapter" >
+    <meta name="keywords" content="team dirt, teamdirt" >
+    
+    <base href="../" target="_parent" >
+    <title>Team Dirt</title>
+    <link rel="icon" href="favicon.png">
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+    <script type="text/javascript" src="/scripts/global.js"></script>
+    
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/styles/teamdirt.css">
+	<style>
+		img.partner {
+			max-width: 100%;
+			max-height: 150px;
+		}
+	</style>
+    
+</head>
+<body ng-app="tdApp">
+    <header id="commonHeader" ng-include="'includes/navBar.htm'"></header>
+    
+    <main id="mainContainer" class="w3-panel">
+        <header id="mainHeader">
+            <h1>Land Management/Owner Partners</h1>
+        </header>
+        
+		<section id="description" class="w3-panel">
+			<h4 class="subsection">Description</h4>
+			<p>Team Dirt does not own any of the land on which the trails are built.  Trails are built with the partnership of land managers/owners.  Each land manager has their own goals and requirements for trail building that Team Dirt must follow.  Federal programs, such as the BLM or USFS have recreation requirements built into their charters.  Team Dirt applies for recreation grants/permits with these federal programs to allow access to building trails.  The process is similar when working with private owners, but typically these organizations are more involved in the process.  There is no mandate that these land managers give access to land, so Team Dirt works closely to follow the constraints set forth by these land managers.  If a trail is approved, then a kick off process is started internal to Team Dirt to start to raise funds (if needed), flag, and schedule build days.</p>
+            <p>Team Dirt has worked hard these past few years to cultivate a working relationship with these land management partners.  By showing quality trail building practices and results the club hopes to expand on that relationship.</p>
+		</section>
+		
+		<section id="Partners" class="w3-panel">
+			<div class="w3-panel w3-card w3-padding-16">
+				<h4 class="subsection">Partner - BLM</h4>
+				<div class="w3-row-padding">
+					<div class="w3-col s2">
+						<a href="https://www.blm.gov/or/programs/recreation/" target="_blank"><img src="imgs/partners/US-DOI-BLM-logo.png" alt="partner" class="partner"></a>
+					</div>
+					<div class="w3-col s10">
+						<p>The Bureau of Land Management manages the Alsea Falls area.  Since the Fall of YYYY, Team Dirt has worked with the regional BLM office of Oregon/Washington to create the Alsea Falls trail system.  The trail system has become one of the major destinations for mountain biking in the Willamette Valley.</p>
+					</div>
+				</div>
+			</div>
+			<div class="w3-panel w3-card w3-padding-16">
+				<h4 class="subsection">Partner - Starker Forests</h4>
+				<div class="w3-row-padding">
+					<div class="w3-col s2">
+						<a href="http://www.starkerforests.com/" target="_blank"><img src="imgs/partners/Starker-Forests.jpeg" alt="partner" class="partner"></a>
+					</div>
+					<div class="w3-col s10">
+						<p>Starker Forests has operated in the Benton County area since 1936.  There is a long history of Starker Forests allowing permitted recreation on their land, the working relationship with Team Dirt extends that relationship to the mountain biking community.  Starker Forests owns the Blodgett area and central area of the McDonald Forest.  </p>
+					</div>
+				</div>
+			</div>
+			<div class="w3-panel w3-card w3-padding-16">
+				<h4 class="subsection">Partner - Oregon State University</h4>
+				<div class="w3-row-padding">
+					<div class="w3-col s2">
+						<a href="http://cf.forestry.oregonstate.edu/" target="_blank"><img src="imgs/partners/cof_v_spot1.png" alt="partner" class="partner"></a>
+					</div>
+					<div class="w3-col s10">
+						<p>Oregon State University owns and operates the McDonald-Dunn Research Forests and Peavy Arboretum, two tracts of land which contain ridable trails.  Team Dirt has worked with the College of Forestry to plan and build the new No-Secret trail.  The College of Forestry has provided valuable trail build training to Team Dirt Trail Leads in the past.</p>
+					</div>
+				</div>
+			</div>
+            <div class="w3-panel w3-card w3-padding-16">
+				<h4 class="subsection">Partner - USFS</h4>
+				<div class="w3-row-padding">
+					<div class="w3-col s2">
+						<a href="https://www.fs.usda.gov" target="_blank"><img src="/imgs/partners/us_forest_service.png" alt="partner" class="partner"></a>
+					</div>
+					<div class="w3-col s10">
+						<p>The United States Forest Service manages the Siuslaw National Forest, which contains the Mary’s Peak area.  Team Dirt works with the USFS to maintain the current seasonal trails around Mary’s Peak.</p>
+					</div>
+				</div>
+			</div>
+            <div class="w3-panel w3-card w3-padding-16">
+				<h4 class="subsection">Partner - Corvallis Parks and Recreation</h4>
+				<div class="w3-row-padding">
+					<div class="w3-col s2">
+						<a href="http://www.corvallisoregon.gov/index.aspx?page=56" target="_blank"><img src="imgs/partners/corvallispr.jpg" alt="partner" class="partner"></a>
+					</div>
+					<div class="w3-col s10">
+						<p>The City of Corvallis manages the Chip Ross and Bald Hill parks, along with the BMX track, and the site of the proposed Pump Track.  Team Dirt is working on raising funds to build a Pump Track in downtown.  In addition, Team Dirt helps to promote bike activity, such as the Spring Roll, and promote bike tourism.</p>
+					</div>
+				</div>
+			</div>
+			
+		</section>
+        
+        <footer></footer>
+    </main>
+    
+    <footer id="commonFooter" ng-include="'includes/footer.htm'"></footer>
+	
+</body>
+</html>

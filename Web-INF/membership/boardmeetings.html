@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Team Dirt IMBA Mountain Bike Chapter" >
+    <meta name="keywords" content="team dirt, teamdirt" >
+    
+    <base href="../" target="_parent" >
+    <title>Team Dirt</title>
+    <link rel="icon" href="favicon.png">
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+    <script type="text/javascript" src="/scripts/global.js"></script>
+    <script type="text/javascript" src="/scripts/boardmeetings.js"></script>
+    
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/styles/teamdirt.css">
+    <link rel="stylesheet" type="text/css" href="/styles/boardmeetings.css">
+
+</head>
+<body ng-app="tdApp">
+    <header id="commonHeader" ng-include="'includes/navBar.htm'"></header>
+    
+    <main id="mainContainer" class="w3-panel">
+        <header id="mainHeader">
+            <h1>Board Meetings</h1>
+        </header>
+        
+		<section class="w3-panel">
+			<h4 class="subsection">Description</h4>
+			<p>Team Dirt is a community organization ran by volunteers.  The group has a board of directors, which oversee finances, overall group direction, and help plan upcoming events.  From there, the area managers (McDonald Forest, Alsea Falls, etc.) will organize specific events and fundraisers.  Finally, trail leads are assigned to specific events.</p>
+            <p>Board meetings are often held at the local community Co-Op meeting halls on the second Wednesday of the month.  See the <a href="/community/calendar.html">calendar</a> for details.</p>
+		</section>
+        
+        <section class="w3-panel">
+			<h4 class="subsection">How to Get Involved?</h4>
+            <p>It is best to first volunteer at several build events across the different areas to become familiar with the group.  After which, you can sign up at one of several Trail Lead training events held throughout the year (these are often posted to the <a href="/community/calendar.html">calendar</a> and may be site and machinery specific).  You can then volunteer on the board and help out with other organization functions.</p>
+		</section>
+		
+        <section ng-show="false" class="w3-panel">
+			<h4 class="subsection">Meet the Board</h4>
+			<div class="w3-panel w3-padding-8">
+				<div class="w3-row-padding traillead">
+					<div class="w3-col s2 traillead">
+						<img src="imgs/placeholder.png" alt="trailLead" class="traillead">
+					</div>
+					<div class="w3-col s10">
+                        <h5 class="subsection">Mike Ripley</h5>
+						<p>The Declaration of Independence is the statement adopted by the Second Continental Congress meeting at the Pennsylvania State House (Independence Hall) in Philadelphia on July 4, 1776.</p>
+                        <p><i>Favorite TeamDirt Trail:</i></p>
+					</div>
+				</div>
+			</div>
+		</section>
+        
+        <section class="w3-panel" ng-controller="BoardMeetingController as boardMeetingController">
+			<h4 class="subsection">Meeting Minutes</h4>
+			<div ng-repeat="eachMeeting in boardMeetingController.getMeetingList()" class="w3-panel w3-padding-16 w3-border">
+				<div class="w3-row">
+					<div class="w3-col s1 filelink">
+                        <a ng-href="{{eachMeeting.url}}" target="_blank"><i class="fa fa-file-text-o w3-jumbo" aria-hidden="true"></i></a>
+					</div>
+					<div class="w3-col s11">
+                        <p><b>{{eachMeeting.date}}</b></p>
+                        <div class="w3-row">
+                            <div class="w3-col s2" style="min-width:80px;">
+                              <p><b>Discussion Summary:</b></p> 
+                            </div>
+                            <div class="w3-col s10">
+                                <ul>
+                                  <li ng-repeat="eachResolution in eachMeeting.resolutions">{{eachResolution}}</li>
+                                </ul>
+                            </div>
+                        </div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+        
+        <footer></footer>
+    </main>
+    
+    <footer id="commonFooter" ng-include="'includes/footer.htm'"></footer>
+	
+</body>
+</html>

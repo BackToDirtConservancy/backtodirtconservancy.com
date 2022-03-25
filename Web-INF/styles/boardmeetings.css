@@ -1,0 +1,12 @@
+img.traillead {
+	max-width: 100%;
+	max-height: 150px;
+}
+
+div.traillead {
+	min-width: 100px;
+}
+
+div.filelink {
+	min-width: 80px;
+}

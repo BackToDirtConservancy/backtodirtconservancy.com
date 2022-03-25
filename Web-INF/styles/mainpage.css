@@ -1,0 +1,73 @@
+div.heroBanner {
+	width:100%;
+	height:400px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+header[id="mainHeader"] {
+	margin-bottom: 20px;
+}
+
+img.pressImg {
+    max-height:200px;
+}
+
+/* Sponsor Pic Dimensions */
+img.gold {
+    max-width:100%;
+    max-height:200px;
+}
+img.silver {
+	max-width:100%;
+    max-height:160px;
+}
+img.bronze {
+    max-width:100%;
+	max-height:110px;
+}
+img.friends {
+    max-width:100%;
+	max-height:70px;
+}
+
+div.contentLeft {
+	max-width:100%;
+	min-width:530px;
+	margin: auto;
+}
+
+div.contentRight {
+	max-width:100%;
+	min-width:300px;
+	margin: auto;
+}
+
+div.mainElement {
+	max-width:100%;
+	min-width:300px;
+	margin: auto;
+}
+
+/* Events */
+div.event {
+	margin: 15px;
+	padding: 5px;
+}
+img.event {
+    max-width:100%;
+    max-height:300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+h5.eventTitle {
+    font-weight: bold;
+    margin: 0px;
+	color:black;
+	background-color: #9ECC9E;
+	padding: 5px;
+}
+*.canceled {
+	text-decoration: line-through;
+}

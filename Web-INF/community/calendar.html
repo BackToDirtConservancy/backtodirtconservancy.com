@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Team Dirt IMBA Mountain Bike Chapter" >
+    <meta name="keywords" content="team dirt, teamdirt" >
+    
+    <base href="../" target="_parent" >
+    <title>Team Dirt</title>
+    <link rel="icon" href="favicon.png">
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+    <script type="text/javascript" src="/scripts/global.js"></script>
+    
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/styles/teamdirt.css">
+</head>
+<body ng-app="tdApp">
+    
+    <header id="commonHeader" ng-include="'includes/navBar.htm'"></header>
+    
+    <main id="mainContainer" class="w3-panel">
+        <header id="mainHeader">
+            <h1>Planning Calendar</h1>
+        </header>
+        
+		<section id="description" class="w3-panel">
+			<h4 class="subsection">Description</h4>
+			<p>The following is a combined calendar of events for Team Dirt, Alsea Falls, OSU Mac-Dunn, and Starker Alder Creek build days.  Events will also typically be posted to Facebook a few days before, so members can mark their availability status.  Any event posted to Facebook that is canceled, will still show up on this site, but be marked as canceled.</p>
+		</section>
+        
+		<section ng-controller="ScreenResolution as resolutionCtrl" ng-init="resolutionCtrl.calculateIFrameWidth()" class="w3-panel w3-center">
+            <!-- <iframe class="iFrameElement" src=" https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FLos_Angeles&amp;src=NjZ0dW45ZXRndGkwb2M1bTBnYjhwcnBoYzBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23616161&amp;showTitle=0&amp;showNav=0&amp;showDate=1&amp;showCalendars=0&amp;mode=MONTH" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe> -->
+			<iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FLos_Angeles&mode=MONTH&title=%20%20%20%20&showNav=1&src=NjZ0dW45ZXRndGkwb2M1bTBnYjhwcnBoYzBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23616161" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+		</section>
+        
+        <footer></footer>
+    </main>
+    
+    <footer id="commonFooter" ng-include="'includes/footer.htm'"></footer>
+	    
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Team Dirt IMBA Mountain Bike Chapter" >
+    <meta name="keywords" content="team dirt, teamdirt" >
+    
+    <base href="../" target="_parent">
+    <title>Team Dirt</title>
+    <link rel="icon" href="favicon.png">
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+    <script type="text/javascript" src="/scripts/global.js"></script>
+    <script type="text/javascript" src="/scripts/trailareas.js"></script>
+    
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/styles/teamdirt.css">
+	<link rel="stylesheet" type="text/css" href="/styles/trailareas.css">
+
+</head>
+<body ng-app="tdApp">
+    <header id="commonHeader" ng-include="'includes/navBar.htm'"></header>
+    
+    <main id="mainContainer" ng-controller="ScreenResolution as resolutionCtrl" ng-init="resolutionCtrl.calculateIFrameWidth()" class="w3-panel">
+		
+		<header id="mainHeader">
+			<h1>McDonald Forest (Peavy & Chip Ross) Area</h1>
+		</header>
+
+		<section class="w3-panel">
+			<div class="TrailforksRegionInfo iFrameElement" data-w="1000" data-h="150" data-rid="6123" data-counts="1" data-stats="1"></div>
+            
+            <div class="TrailforksWidgetMap iFrameElement" data-w="1000px" data-h="400px" data-rid="6123" data-maptype="trailforks" data-trailstyle="difficulty" data-controls="1" data-list="0" data-dml="1" data-layers="labels" data-z="" data-lat="" data-lon="" data-hideunsanctioned="1"></div>
+            
+			<a href="https://www.trailforks.com/region/mcdonald-forest-6123/"><img src="/imgs/partners/trailforks_logo_pb.png" class="tfLogo"/></a>
+		</section>
+
+		<section id="warning" ng-show="true" class="w3-panel w3-border w3-border-red w3-card-2">
+			<h5 class="subsection"><i class="fa fa-exclamation-triangle w3-xxxlarge" aria-hidden="true" style="color:red;vertical-align:middle;"></i> Trail Area Warning</h5>
+			<p>Click <a href="http://cf.forestry.oregonstate.edu/current-activities" target="_blank">here</a> for the latest OSU updates.</p>
+		</section>
+
+		<section class="w3-panel">
+			<h4 class="subsection">Description</h4>
+			<p>The McDonald Forest area has a long history in its relationship to mountain biking.  Largely due to being conveniently located adjacent to the City of Corvallis.  In reality, there are five separate land areas:  McDonald Forest (South), Peavy Arboretum (North-East), Dunn Forest (North), Chip Ross (East), and an island of land operated by Starker Forests in the center of the McDonald Forest.  The McDonald Forest, Dunn Forest, and Peavy Arboretum are managed by OSU, while Chip Ross is managed by the City of Corvallis.  Due to the number of land managers and number of visitors to the area, relationship with the mountain biking community has been an evolving process.</p>
+            <p>Team Dirt has worked hard these past few years to rectify contentious areas and present a more uniform face to the mountain biking community for land managers to work with. The first ever, official mountain bike purpose built trail, <a href="/openprojects/nosecret.html">No-Secret</a>, is currently being constructed in the McDonald Forest.  There are several unauthorized trails, whose future is currently being decided.  Team Dirt has advocated for suitable unauthorized trails to become official.   If an unauthorized trail is marked with a sign, then it is best to follow that sign’s instructions.  The unauthorized trails are not considered during land management decisions, and thus subject to erasure.</p>
+            <p>The official trails are primarily maintained by the combined effort of the mountain biking and trail running communities.  Hence, all trails are bidirectional.  Some trails are seasonally closed to mountain biking, or have a dry condition requirement (check the trail reports below for the latest conditions).</p>
+            <p>There are five main parking areas, depending upon your desired starting location.  The <a href="https://goo.gl/maps/x3kKw6SZcNs" target="_blank">Oak Creek Gate</a>, is the main access point for the McDonald Forest and is often where build days are scheduled to meet.  The <a href="https://goo.gl/maps/44Kp4v6HSw62" target="_blank">Chip Ross Access Gate</a>, is attached to the City of Corvallis.  The <a href="https://goo.gl/maps/SSHCn2nR6Fw" target="_blank">Lewisburg Saddle</a>, offers a convenient access to both McDonald Forest and Peavy Arboretum.  The <a href="https://goo.gl/maps/rbvyFRMaM812" target="_blank">Soap Creek Gate</a>, offers access to the northern part of the McDonald Forest.  Finally, the <a href="https://goo.gl/maps/4knGzrkaFPt" target="_blank">Peavy Arboretum</a> parking lot gives access to the seasonal arboretum.</p>
+		</section>
+
+		<section class="w3-panel">
+			<h4 class="subsection">Trails</h4>
+            <p>Please help out fellow riders, by submitting a trail report when you discover a trail hazard.  Also, general trail reports help too, since it keeps our records up to date.  You can submit a trail report by clicking on the trail in the table below, logging into trailforks (accounts are <i>free</i>), and creating a trail report.</p>
+			<div class="TrailforksTrailStatus iFrameElement" data-w="1000" data-h="800" data-rid="6123" data-displaytype="table" data-unsanctioned="0" data-photos="0"></div>
+		</section>
+
+		<section class="w3-panel">
+			<h4 class="subsection">Land Management Partners</h4>
+			<!--a ng-repeat="partner in ridearea.partners" href="{{partner.url}}" target="_blank"><img src="{{partner.src}}" alt="partner" class="partner"></a-->
+			<a href="http://cf.forestry.oregonstate.edu/" target="_blank"><img src="imgs/partners/cof_v_spot1.png" alt="map" class="partner"></a>
+			<a href="http://www.starkerforests.com/" target="_blank"><img src="imgs/partners/Starker-Forests.jpeg" alt="map" class="partner"></a>
+            <a href="http://www.corvallisoregon.gov/index.aspx?page=56" target="_blank"><img src="imgs/partners/corvallispr.jpg" alt="partner" class="partner"></a>
+		</section>
+
+		<footer></footer>
+		
+    </main>
+    
+    <footer id="commonFooter" ng-include="'includes/footer.htm'"></footer>
+
+</body>
+</html>

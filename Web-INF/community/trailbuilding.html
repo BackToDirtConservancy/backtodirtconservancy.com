@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Team Dirt IMBA Mountain Bike Chapter" >
+    <meta name="keywords" content="team dirt, teamdirt" >
+    
+    <base href="../" target="_parent" >
+    <title>Team Dirt</title>
+    <link rel="icon" href="favicon.png">
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+    <script type="text/javascript" src="/scripts/global.js"></script>
+    
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/styles/teamdirt.css">
+	<link rel="stylesheet" type="text/css" href="/styles/trailbuilding.css">
+    
+</head>
+<body ng-app="tdApp">
+    <header id="commonHeader" ng-include="'includes/navBar.htm'"></header>
+    
+    <main id="mainContainer" class="w3-panel">
+        <header id="mainHeader">
+            <h1>Trail Building - Community Involvement</h1>
+        </header>
+        
+		<section id="description" class="w3-panel">
+			<h4 class="subsection">Sustainable Trails</h4>
+            <p>Team Dirt only supports the creation of sustainable trails.  A sustainable trail is one which does not require constant maintenance under normal riding traffic.  The best way to achieve this is through proper drainage of water.  Building sustainable trails is part art and science.  The science part is using the correct dirt (avoiding organic material, like buried rotten logs), bench cutting into hills with the proper slope gradient, planning for turn exits, berm height and angle, placing drain exits on straight away, reinforcing high impact areas, blocking alternative routes, etc.  The art part is trying to add <i>signature</i> to an engineered trail, placement of features, flow, leaving specific roots and rocks, importing rocks, placing a trail cue, etc.</p>
+            <p>A trail starts with a general topographic route, approved by the land manager and championed by the Team Dirt area manager.  However, as the trail is created different terra aspects are factored in as they are encountered.  By showing up to build days and discussing your thoughts with other builders, you have the ability to add your own requirements to the trail, hence leaving a <i>signature</i> of your own.</p>
+            <p>In partnership with the BLM, IMBA has created a Mountain Bike Trail Guide Book, available for free <a href="http://gqte.imba.com/" target="_blank">here</a>.</p>
+            <div ng-controller="ScreenResolution as resolutionCtrl" ng-init="resolutionCtrl.calculateIFrameWidth()">
+                    <iframe class="iFrameElement" width="560" height="315" src="https://www.youtube.com/embed/dDlBlDDGw5U?rel=0&amp;controls=0" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <br>
+            <div ng-controller="ScreenResolution as resolutionCtrl" ng-init="resolutionCtrl.calculateIFrameWidth()">
+                    <iframe class="iFrameElement" width="560" height="315" src="https://www.youtube.com/embed/2TO3GcWZzjc?rel=0&amp;controls=0" frameborder="0" allowfullscreen></iframe>
+			</div> 
+		</section>
+		
+		 <section ng-show="false" class="w3-panel">
+			<h4 class="subsection">Meet the Trail Leaders</h4>
+			<div class="w3-panel w3-padding-8">
+				<div class="w3-row-padding traillead">
+					<div class="w3-col s2 traillead">
+						<img src="imgs/placeholder.png" alt="trailLead" class="traillead">
+					</div>
+					<div class="w3-col s10">
+                        <h5 class="subsection">Tim Maddux</h5>
+						<p>The Declaration of Independence is the statement adopted by the Second Continental Congress meeting at the Pennsylvania State House (Independence Hall) in Philadelphia on July 4, 1776.</p>
+                        <p><i>Favorite TeamDirt Trail:</i></p>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section id="tools" class="w3-panel">
+			<h4 class="subsection">Tool Assets</h4>
+			<div class="w3-panel w3-padding-8">
+				<div class="w3-row-padding">
+					<div class="w3-col s2 tool">
+						<img src="/imgs/raw_imgs/equipment/eqp_3.jpg" alt="tool" class="tool">
+					</div>
+					<div class="w3-col s10">
+						<h5 class="subsection">Hand Tools</h5>
+						<p>Team Dirt owns and provides to its volunteers hand tools for build days.  Most of the tools are repurposed from Wild Fire Suppression and include Pulaski Tools, McLeod Tools, Hoe Tools, Fire Rakes, Garden Rakes, Hand Saws, Hedge Shears, Limb Loppers, Shovels, and buckets.  </p>
+					</div>
+				</div>
+			</div>
+            <div class="w3-panel w3-padding-8">
+				<div class="w3-row-padding">
+					<div class="w3-col s2 tool">
+						<img src="/imgs/raw_imgs/equipment/eqp_4.jpg" alt="tool" class="tool">
+					</div>
+					<div class="w3-col s10">
+						<h5 class="subsection">Power Buckets</h5>
+						<p>Team Dirt has two skid steer power wheel barrows.  The power wheel barrow includes a hydraulic lift on the bucket.  This tool is essential for moving large amounts of dirt (e.g., when building berms).  A lighter duty version of this tool is planned for the McDonald Forest.</p>
+					</div>
+				</div>
+			</div>
+            <div class="w3-panel w3-padding-8">
+				<div class="w3-row-padding">
+					<div class="w3-col s2 tool">
+						<img src="/imgs/raw_imgs/equipment/eqp_1_small.png" alt="tool" class="tool">
+					</div>
+					<div class="w3-col s10">
+						<h5 class="subsection">Shuttle Wagon and Trailer</h5>
+						<p>Team Dirt has a repurposed short school bus and custom trailer for shuttle days.  The trailer has custom bike hitches welded to the frame, which allow for quick mounting.  Come on out to a shuttle day to hope on the short bus!</p>
+					</div>
+				</div>
+			</div>
+            <div class="w3-panel w3-padding-8">
+				<div class="w3-row-padding">
+					<div class="w3-col s2 tool">
+						<img src="/imgs/raw_imgs/equipment/eqp_5.jpg" alt="tool" class="tool">
+					</div>
+					<div class="w3-col s10">
+						<h5 class="subsection">Kubota U17 mini Excavator</h5>
+						<p>A mini excavator may be used to rough in tread on approved projects.  This greatly speeds up the trail build process.  After the rough tread is laid down, trail builders will build in features, fine tune the final tread by hand, then re-vegitate the area to quicken the natural aspects of the trail.</p>
+					</div>
+				</div>
+			</div>
+
+		</section>
+        
+        <footer></footer>
+    </main>
+    
+    <footer id="commonFooter" ng-include="'includes/footer.htm'"></footer>
+	
+</body>
+</html>
