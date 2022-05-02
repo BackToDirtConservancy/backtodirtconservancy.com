@@ -1,6 +1,7 @@
 nav[id="commonNavBar"] {
     background-color: #000000;
     color: white;
+    position: absolute;
 }
 
 main[id="mainContainer"] {
